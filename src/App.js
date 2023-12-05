@@ -157,11 +157,12 @@ function App() {
         width: '100%',
         height: '100%',
         margin: '0 auto',
+        marginTop: '30px',
         padding: '1rem 0 3rem',
         marginBottom: '1rem',
         borderRadius: {
           xs: 'none',
-          sm: '0 0 1rem 1rem',
+          sm: '1rem 1rem 1rem 1rem',
         },
         boxShadow: {
           xs: 'none',
