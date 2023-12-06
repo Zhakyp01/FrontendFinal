@@ -9,9 +9,9 @@ import UTCDatetime from './components/Reusable/UTCDatetime';
 import LoadingBox from './components/Reusable/LoadingBox';
 import { ReactComponent as SplashIcon } from './assets/splash-icon.svg';
 import Logo from './assets/logo.png';
+import Logo2 from './assets/alatoo.png';
 import ErrorBox from './components/Reusable/ErrorBox';
 import { ALL_DESCRIPTIONS } from './utilities/DateConstants';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import {
   getTodayForecastWeather,
   getWeekForecastWeather,
@@ -99,13 +99,13 @@ function App() {
   if (todayWeather && todayForecast && weekForecast) {
     appContent = (
       <React.Fragment>
+        <Grid item xs={12} md={6}>
+          <WeeklyForecast data={weekForecast} />
+        </Grid>
         <Grid item xs={12} md={todayWeather ? 6 : 12}>
           <Grid item xs={12}>
             <TodayWeather data={todayWeather} forecastList={todayForecast} />
           </Grid>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <WeeklyForecast data={weekForecast} />
         </Grid>
       </React.Fragment>
     );
@@ -193,18 +193,20 @@ function App() {
 
             <UTCDatetime />
             <Link
-              href="https://github.com/Zhakyp01"
+              href="http://alatoo.edu.kg"
               target="_blank"
               underline="none"
               sx={{ display: 'flex' }}
             >
-              <GitHubIcon
-                sx={{
-                  fontSize: { xs: '20px', sm: '22px', md: '26px' },
-                  color: 'white',
-                  '&:hover': { color: '#2d95bd' },
-                }}
-              />
+              <Box
+               component="img"
+               sx={{
+                 height: { xs: '56px', sm: '72px', md: '76px' },  
+                 width: 'auto',
+               }}
+               alt="logo2"
+               src={Logo2}
+             />
             </Link>
           </Box>
           <Search onSearchChange={searchChangeHandler} />
