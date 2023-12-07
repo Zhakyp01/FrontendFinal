@@ -1,10 +1,8 @@
-<!-- ![Application screenshot](./public/screenshot.png) -->
-
 # Ala-Too Cloudia
 
 This is a simple React application that provides current weather data and a 6-day forecast for more than 200,000 cities. It uses the OpenWeatherMap API to fetch weather information based on user input. The project was initiated using [Create React App](https://github.com/facebook/create-react-app).
 
-![AIU preview](./public/screenshot.png?raw=true "AIU")
+![AIU preview](./public/screenshot1.png?raw=true "AIU")
 
 ## CI/CD and Cloud Deployment
 
