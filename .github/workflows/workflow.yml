@@ -1,3 +1,4 @@
+
 name: Website - Production
 on:
   push:
@@ -12,7 +13,9 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_BUCKET_NAME: zhakyp-frontend-react-bucket
       AWS_DEFAULT_REGION: "us-east-1"
+      CF_DIST_ID: E31ARZJC7NKZC1
       SOURCE_DIR: "build"
+      DEST_DIR: "build"
       CI: false
 
     steps:
@@ -40,4 +43,8 @@ jobs:
 
       - name: Upload App to S3 Bucket
         run: |
-          aws s3 sync $SOURCE_DIR s3://$AWS_BUCKET_NAME/ --delete
+          aws s3 sync $SOURCE_DIR s3://$AWS_BUCKET_NAME/$DEST_DIR --delete
+
+      - name: Create CloudFront Cache Invalidation
+        run: |
+          aws cloudfront create-invalidation --distribution-id $CF_DIST_ID --paths '/*'
