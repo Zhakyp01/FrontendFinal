@@ -13,7 +13,6 @@ jobs:
       AWS_BUCKET_NAME: zhakyp-frontend-react-bucket
       AWS_DEFAULT_REGION: "us-east-1"
       SOURCE_DIR: "build"
-      DEST_DIR: "build"
       CI: false
 
     steps:
@@ -41,4 +40,4 @@ jobs:
 
       - name: Upload App to S3 Bucket
         run: |
-          aws s3 sync $SOURCE_DIR s3://$AWS_BUCKET_NAME/$DEST_DIR --delete
+          aws s3 sync $SOURCE_DIR s3://$AWS_BUCKET_NAME/ --delete
