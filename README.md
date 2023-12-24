@@ -10,7 +10,7 @@ This is a simple React application that provides current weather data and a 6-da
 
 - Version Updates: When a change is pushed to the master branch, the pipeline automatically updates the versions in the cloud environment. This guarantees that the latest version of the application is always available to users.
 
-- Google Cloud Services: I have leveraged Google Cloud Services to host my application. Google Cloud provides various tools and services for cloud computing, including hosting web applications.
+- AWS Cloud Services: I have leveraged AWS Cloud Services to host my application. AWS Cloud provides various tools and services for cloud computing, including hosting web applications.
 
 ## Installation
 
