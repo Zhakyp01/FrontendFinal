@@ -12,6 +12,9 @@ This is a simple React application that provides current weather data and a 6-da
 
 - AWS Cloud Services: I have leveraged AWS Cloud Services to host my application. AWS Cloud provides various tools and services for cloud computing, including hosting web applications.
 
+### YouTube Video Tutorial
+You can view tutorial on [YouTube](https://youtu.be/kwX_gz6K-CE).
+
 ## Installation
 
 Clone the repo: `git clone https://github.com/Zhakyp01/FrontendFinal.git`\
@@ -59,3 +62,5 @@ Copies all the configuration files and the transitive dependencies (webpack, Bab
 ### Live Demo
 
 You can view a live demo here on [Demo](https://cloudia.anttech.online/).
+
+
