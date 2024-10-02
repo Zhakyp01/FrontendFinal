@@ -82,7 +82,7 @@ const DailyForecast = ({ data, forecastList }) => {
 
   return (
     <Layout
-      title="TODAY'S FORECAST zh"
+      title="TODAY'S FORECAST lu"
       content={content}
       sectionSubHeader={subHeader}
       sx={{ marginTop: '2.9rem' }}
